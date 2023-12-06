@@ -5,9 +5,11 @@ import { ReservarRoutingModule } from './reservar-routing.module';
 
 import { SharedModule } from '../shared.module';
 
+import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,12 @@ import { MatNativeDateModule } from '@angular/material/core';
     CommonModule,
     ReservarRoutingModule,
     SharedModule,
+    BrowserAnimationsModule,
+    MatRippleModule,
+    MatNativeDateModule,
     MatDatepickerModule,
     MatFormFieldModule,
-    MatNativeDateModule,
+    MatInputModule,
     JsonPipe
   ]
 })

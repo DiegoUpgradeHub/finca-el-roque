@@ -1,0 +1,39 @@
+.opiniones {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap-reverse row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.google {
+  width: 45%;
+  display: flex;
+  flex-flow: wrap-reverse row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.booking {
+  width: 45%;
+  display: flex;
+  flex-flow: wrap-reverse row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .google {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap-reverse row;
+    justify-content: center;
+    align-items: center;
+  }
+  .booking {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap-reverse row;
+    justify-content: center;
+    align-items: center;
+  }
+}

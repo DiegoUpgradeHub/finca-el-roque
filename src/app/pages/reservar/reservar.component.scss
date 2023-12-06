@@ -1,0 +1,64 @@
+.reservarContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.googleMap {
+  width: 60%;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: flex-end;
+  align-items: center;
+  // width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: flex-start;
+  align-items: center;
+  .iFrame {
+    width: 95%;
+    max-width: 900px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+  }
+}
+.contacto {
+  width: 30%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .reservarContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .googleMap {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacto {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+  }
+}

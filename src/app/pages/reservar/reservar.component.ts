@@ -10,6 +10,8 @@ import {FormGroup, FormControl, FormsModule, ReactiveFormsModule} from '@angular
 })
 export class ReservarComponent {
 
+  value = 'Clear me';
+
   range = new FormGroup({
     start: new FormControl<Date | null>(null),
     end: new FormControl<Date | null>(null),

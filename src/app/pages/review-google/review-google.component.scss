@@ -1,0 +1,39 @@
+.googleContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.image {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .googleContainer {
+    .desktop-image {
+      display: block;
+    }
+    .phone-image {
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .googleContainer {
+    .desktop-image {
+      display: none;
+    }
+    .phone-image {
+      display: block
+    }
+  }
+}

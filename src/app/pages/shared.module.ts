@@ -31,6 +31,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -51,6 +53,9 @@ import { MatButtonModule } from '@angular/material/button';
     //in18
     TranslateModule,
     //Angular material
+    BrowserAnimationsModule,
+    BrowserModule,
+    NoopAnimationsModule,
     MatDatepickerModule,
     MatMenuModule,
     MatToolbarModule,

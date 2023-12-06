@@ -1,0 +1,82 @@
+.galeriaContainer {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+img {
+  border-radius: 1rem;
+  padding: 0.20rem;
+}
+
+.imagenes {
+  .rowImages {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width:50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .imagenGrande {
+    width: 45%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .cuadriculaImagenes {
+    width: 45%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenes {
+    max-width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    // img {
+    //   width:45%;
+    // }
+  }
+}
+
+@media (max-width: 768px) {
+  .galeriaContainer {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenGrande {
+    width: 95%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  .cuadriculaImagenes {
+    width: 95%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    .imagenes {
+      max-width: 100%;
+    }
+  }
+}
