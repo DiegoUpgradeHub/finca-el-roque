@@ -1,39 +1,189 @@
-.opiniones {
-  width: 100%;
-  display: flex;
-  flex-flow: wrap-reverse row;
-  justify-content: center;
-  align-items: flex-start;
+//MENU-TEXTO PHONE AND DESKTOP
+.menu-texto {
+  z-index: 90;
+  position: absolute;
+  right: 10%;
+  top: 60px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 60px;
+  }
+  ul li {
+    margin-right: 20px;
+  }
+  ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0.8;
+  }
+  li {
+    margin: 5px;
+  }
 }
-
-.google {
-  width: 45%;
-  display: flex;
-  flex-flow: wrap-reverse row;
-  justify-content: flex-end;
-  align-items: center;
+.menu-texto-phone {
+  display: none;
 }
-.booking {
-  width: 45%;
-  display: flex;
-  flex-flow: wrap-reverse row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
-  .google {
-    width: 100%;
+  .menu-texto-phone {
+    display: block;
+    z-index: 90;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: nowrap column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 60px;
+    }
+    ul li {
+      margin-right: 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      font-size: 1.5rem;
+      opacity: 0.8;
+    }
+    li {
+      margin: 5px;
+    }
+  }
+  .menu-texto {
+    display: none;
+  }
+}
+
+//MENU-BARRA PHONE AND DESKTOP
+.menu-barra {
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  .logo {
+    padding: 5px;
+    height: 60px;
+    filter: brightness(0%);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-flow: wrap-reverse row;
     justify-content: center;
     align-items: center;
   }
-  .booking {
-    width: 100%;
-    display: flex;
-    flex-flow: wrap-reverse row;
-    justify-content: center;
-    align-items: center;
+  ul li {
+    margin-right: 20px;
   }
+  ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+}
+.menu-barra-phone {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-barra-phone {
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 1.3rem;
+    .logo {
+      padding: 5px;
+      height: 60px;
+      filter: brightness(0%);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ul li {
+      margin-right: 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+  }
+  .menu-barra {
+    display: none;
+  }
+}
+
+//TEXTO INTRODUCCION
+.introTextBox{
+  z-index: 90;
+  position: absolute;
+  left: 10%;
+  top: 525px;
+  max-width: 600px;
+  margin-right: 10%;
+
+  color: white;
+  h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
+
+//COMPONENTES
+.componente {
+  padding-top: 70px;
+}
+
+.galeria {
+  padding-top: 100px;
+}
+
+.actividades {
+  padding-top: 40px;
+}
+
+.review {
+  padding-top: 50px;
+}
+
+.mapa {
+  padding-top: 5px;
 }

@@ -1,12 +1,25 @@
 <div class="reservarContainer">
-  <div class="googleMap">
+  <div class="contacto">
+    <div class="textsBox">
+      <h1>Haz tu reserva online en Finca El Roque</h1>
+      <h3>Alojamiento entre viñedos y vistas fabulosas. Hazte un regalo y escápate un par de días para descubrir el encanto de La Guancha. Lara (tu anfitriona), está a un whatsapp de asegurarsae que tu estancia en Finca El Roque sea lo más tranquila y agradable posible. El entusiasmo, detallismo y buenas sugerencias de qué hacer por la zona por parte de Lara han sido recompensadas con muy buenas opiniones en Google y Booking. No dudes en ponerte en contacto por whatsapp haciendo click en el botón.</h3>
+      <p>Primero comprueba la disponibilidad a través del calendario, luego abre un chat y haz tu reserva así de fácil.</p>
+    </div>
+    <div class="buttonsBox">
+      <a class="link button" href="https://wa.me/34616161053" target="_blank">
+          <p class="link" href="https://wa.me/34616161053" target="_blank">Abre un chat con Lara</p>
+          <img class="whatsapp-icon" src="../../../assets/whatsapp.png" alt="icon-whatsapp">
+      </a>
+      <div class="showCalendar" (click)="showHideCalendar()">
+        <p>Mostrar calendario</p>
+        <img class="whatsapp-icon" src="../../../assets/calendario.png" alt="icon-calendario">
+      </div>
+    </div>
+  </div>
+  <div class="googleCalendar" *ngIf="showCalendar">
     <div class="iFrame">
       <iframe class="iFrame" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=UTC&showTitle=0&showPrint=0&showCalendars=0&showTabs=0&showTz=0&src=ZGZjMTM3YjZkZDBhYjdhZGQ0ZDg1ZWEyZDg3ZDA4M2YzZjVkYWVkNTU2M2I3NTA2Nzg0NzVhOTA2MDg4MzdkMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border-width:0;" width="800" height="400" frameborder="0" scrolling="no"></iframe>
     </div>
-  </div>
-  <div class="contacto">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, ipsam dignissimos? Aperiam, facilis ex sapiente eligendi similique recusandae dolorum. Neque expedita quos facere nemo cumque, suscipit ipsum totam pariatur culpa.</p>
-    <p>Whatsapp icon</p>
   </div>
 </div>
 

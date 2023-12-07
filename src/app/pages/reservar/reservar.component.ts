@@ -10,11 +10,10 @@ import {FormGroup, FormControl, FormsModule, ReactiveFormsModule} from '@angular
 })
 export class ReservarComponent {
 
-  value = 'Clear me';
+  showCalendar: boolean = false;
 
-  range = new FormGroup({
-    start: new FormControl<Date | null>(null),
-    end: new FormControl<Date | null>(null),
-  });
+  showHideCalendar(): void {
+    this.showCalendar = !this.showCalendar;
+  }
 
 }

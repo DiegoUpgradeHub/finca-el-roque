@@ -1,11 +1,68 @@
-<app-intro></app-intro>
-<app-reservar></app-reservar>
-<app-galeria></app-galeria>
-<app-actividades></app-actividades>
-<app-review-google></app-review-google>
-<app-review-booking></app-review-booking>
-<!-- <div class="opiniones">
-  <app-review-google class="google"></app-review-google>
-  <app-review-booking class="booking"></app-review-booking>
-</div> -->
-<app-mapa></app-mapa>
+<!-- MENU DESKTOP -->
+<nav class="menu-barra">
+  <a href="#intro"><img class="logo" src="../assets/logo-white.png" alt="finca-el-roque-logo"></a>
+  <ul>
+    <li><a href="#intro">Intro</a></li>
+    <!-- <li><a href="#intro"><img class="logo" src="../assets/logo-white.png" alt="finca-el-roque-logo"></a></li> -->
+    <li><a href="#reservar">Reservar</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#actividades">Actividades</a></li>
+    <li><a href="#review-google">Review Google</a></li>
+    <li><a href="#review-booking">Review Booking</a></li>
+    <li><a href="#mapa">Mapa</a></li>
+  </ul>
+</nav>
+<nav class="menu-texto">
+  <ul>
+    <li><a href="#reservar">Reservar</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#actividades">Actividades</a></li>
+    <li><a href="#review-google">Opiniones</a></li>
+    <li><a href="#mapa">Mapa</a></li>
+  </ul>
+</nav>
+<!-- PHONE DESKTOP -->
+<nav class="menu-barra-phone">
+  <a href="#intro"><img class="logo" src="../assets/logo-white.png" alt="finca-el-roque-logo"></a>
+  <ul>
+    <li><a href="#reservar">Reservar</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#review-google">Opiniones</a></li>
+  </ul>
+</nav>
+<nav class="menu-texto-phone">
+  <ul>
+    <li><a href="#reservar">Reservar</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#review-google">Opiniones</a></li>
+  </ul>
+</nav>
+
+<!-- TEXTO INTRODUCCIÓN -->
+<div class="introTextBox">
+  <h1>Casa Finca El Roque</h1>
+  <p>Alojamiento entre viñedos con fabulosas vistas al oceano y la montaña. Hazte un regalo y escápate un par de días para descubrir el encanto de La Guancha. Relájate leyendo un libro en la piscina y disfrutando de una copa de vino canario en compañía.</p>
+</div>
+
+<!-- COMPONENTES -->
+<div id="intro"  class="intro">
+  <app-intro></app-intro>
+</div>
+<div id="reservar" class="componente">
+  <app-reservar></app-reservar>
+</div>
+<div id="galeria" class="componente galeria">
+  <app-galeria></app-galeria>
+</div>
+<div id="actividades" class="componente actividades">
+  <app-actividades></app-actividades>
+</div>
+<div id="review-google" class="componente review">
+  <app-review-google></app-review-google>
+</div>
+<div id="review-booking" class="componente review">
+  <app-review-booking></app-review-booking>
+</div>
+<div id="mapa" class="componente mapa">
+  <app-mapa></app-mapa>
+</div>

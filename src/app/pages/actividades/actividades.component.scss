@@ -4,18 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url('../../../assets/vinedo.jpeg');
+  background-image: url('../../../assets/actividades.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-color: #006400;
   margin: 30px 0;
   padding: 30px;
-  // // filter: blur(2px);
-  // // -webkit-filter: blur(2px);
 }
 
 .box {
+  z-index: 10;
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
@@ -29,8 +27,6 @@
 
 .textIntro {
   text-align: center;
-  width: 85%;
-  // max-width: 750px;
 }
 
 .iconosContainer {
@@ -41,29 +37,61 @@
 }
 
 .iconosBloque {
-  width: 50%;
+  width: 100%;
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap row;
   justify-content: center;
   align-items: center;
 }
 
 .iconoTexto {
-  max-width: 350px;
   display: flex;
   flex-flow: nowrap row;
   justify-content: center;
   align-items: center;
   background: lightgrey;
+  border-radius: 10px;
+  max-width: 200px;
   margin: 5px;
   padding: 5px;
-  border-radius: 10px;
   .icono {
-    width: 58px;
+    width: 50px;
     height: 50px;
     border-radius: 20rem;
     border: 10px solid black;
     margin: 10px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+
+.navBlock {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  .button {
+    background: black;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 10px;
+  }
+  .showMore {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    margin: 5px;
+  }
+  .close {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(32, 33, 33);
+    margin: 5px;
   }
   p {
     margin: 0px;

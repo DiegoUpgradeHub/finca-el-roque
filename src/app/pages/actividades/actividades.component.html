@@ -1,6 +1,7 @@
 <div class="actividadesContainer">
   <div class="box">
-    <h1 class="textIntro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio aut voluptatum dolorum vero ipsam consectetur ducimus perspiciatis! Soluta illum, delectus eligendi odit necessitatibus quos! Officiis inventore excepturi quaerat eveniet.</h1>
+    <h1 class="textIntro">Lorem ipsum dolor sit amet.</h1>
+    <p class="textIntro">Finca el Roque, es una casa rural rodeada de viñedos, arboles frutales y diferente tipo de vegetación. Al ser una finca cuenta con animalitos, entre ellos gatos.</p>
     <div class="iconosContainer">
       <div class="iconosBloque">
         <div class="iconoTexto">
@@ -18,23 +19,86 @@
           <!-- <img src="../../../assets/" alt=""> -->
           <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
         </div>
+        <div class="iconoTexto">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
+        <div class="iconoTexto" *ngIf="showMore2">
+          <div class="icono"></div>
+          <!-- <img src="../../../assets/" alt=""> -->
+          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
+        </div>
       </div>
-      <div class="iconosBloque">
-        <div class="iconoTexto">
-          <div class="icono"></div>
-          <!-- <img src="../../../assets/" alt=""> -->
-          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-        </div>
-        <div class="iconoTexto">
-          <div class="icono"></div>
-          <!-- <img src="../../../assets/" alt=""> -->
-          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-        </div>
-        <div class="iconoTexto">
-          <div class="icono"></div>
-          <!-- <img src="../../../assets/" alt=""> -->
-          <p>Lorem ipsum dolor sit amer consectetur adipisicing elit</p>
-        </div>
+      <div class="navBlock">
+        <div class="button showMore" (click)="showHideMore()" *ngIf="!showMore"><p>Mostrar más</p></div>
+        <div class="button showMore" (click)="showHideMore2()" *ngIf="showMore2Button"><p>Mostrar más</p></div>
+        <div class="button close" (click)="hideAll()" *ngIf="hide"><p>Ocultar</p></div>
       </div>
     </div>
   </div>
